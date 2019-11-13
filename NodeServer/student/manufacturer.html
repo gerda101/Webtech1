@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Manufacturer</title>
+    <!--  <link href="css/index.css" rel="stylesheet" type="text/css"> -->
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+</head>
+<div id="menuBar">
+    <span class="menuButton"> <a id="home" href="index.html">Home</a> </span>
+    <span class="menuButton"> <a href="addcar.html">Add New Car</a></span>
+    <span class="menuButton"> <a href="manufacturer.html">Add New Manufacturer</a></span>
+    <span class="menuButton"> <a id="gallery" href="gallery.html">Gallery</a></span>
+    <span class="menuButton"> <a id="contacts" href="contacts.html">Contacts</a></span>
+</div>
+<div id="header">
+    <div id="banner">
+        Manufacturers
+    </div>
+</div>
+
+<form action="addManufacturers" method="post">
+    <table>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                <input type ="text" name="name" required="required" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Country
+            </td>
+            <td>
+                <input type="text" name="nationality" required="required">
+                </input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Founded
+            </td>
+            <td>
+                <input type ="date" name="birthDate" required="required">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="insert" value="Add New Manufacturer">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

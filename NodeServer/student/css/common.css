@@ -1,0 +1,89 @@
+body{
+    background-color: navajowhite;
+
+}
+a:link {
+    color: dimgrey;
+}
+a:visited{
+    color: darkslategrey;
+}
+#banner {
+    height: 160px;
+    background-color: saddlebrown;
+    text-align: center;
+    color: darkred;
+    font-size: 120px;
+}
+#menuBar {
+    font-size: 17px;
+    background: sandybrown;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    position: sticky;
+}
+#menuBar .menuButton {
+    width: 180px;
+    border: 5px solid saddlebrown;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+#content{
+    font-size: 30px;
+    padding: 35px;
+    text-align: justify;
+    background: saddlebrown;
+    margin: 70px;
+}
+
+#footer{
+    height: 80px;
+    background-color: saddlebrown;
+    text-align: center;
+    color: darkred;
+    font-size: 40px;
+}
+
+#menuBar .menuButton:hover {
+    background: saddlebrown;
+    border: 3px;
+}
+img.imgleft {
+    height: 300px;
+    float: left;
+    padding: 20px;
+}
+img.imgright {
+    height: 300px;
+    float: right;
+    padding: 20px;
+}
+
+div.clearfix {
+    padding: 20px;
+    overflow: auto;
+}
+div.gallery{
+    height: 250px;
+    width: 310px;
+    padding: 10px;
+    margin: 50px;
+    text-align: center;
+    float: left;
+}
+div.gallery:hover {
+    border: 1px solid coral;
+}
+div.desc {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+div.gallery img {
+    width: 90%;
+}

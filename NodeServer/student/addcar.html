@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Car</title>
+    <!--  <link href="css/index.css" rel="stylesheet" type="text/css"> -->
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+</head>
+<div id="menuBar">
+    <span class="menuButton"> <a id="home" href="index.html">Home</a> </span>
+    <span class="menuButton"> <a href="addcar.html">Add New Car</a></span>
+    <span class="menuButton"> <a href="manufacturer.html">Add New Manufacturer</a></span>
+    <span class="menuButton"> <a id="gallery" href="gallery.html">Gallery</a></span>
+    <span class="menuButton"> <a id="contacts" href="contacts.html">Contacts</a></span>
+</div>
+<div id="header">
+    <div id="banner">
+        Add New Car
+    </div>
+</div>
+
+<form action="addCar" method="post">
+<table>
+    <tr>
+        <td>
+            Name:
+        </td>
+        <td>
+            <input type ="text" name="name" required="required" autofocus value="Name">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Consumption:
+        </td>
+        <td>
+            <input type="text" name="consumption" required="required" autofocus value="XX/100km">
+            </input>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Color:
+        </td>
+        <td>
+            <input type="text" name="color" required="required" autofocus value="white">
+        </td>
+    </tr>
+<tr>
+    <td>
+        Manufacturer:
+    </td>
+    <td>
+        <select name="quantity" required="required" value="0">
+        <option value="manufacturerNames()">manufacturerNames()</option>
+        </select>
+    </td>
+</tr>
+    <tr>
+        <td>
+            Available:
+        </td>
+        <td>
+            <input type="number" name="available" required="required" value="0">
+        </td>
+    <tr>
+        <td>
+            Year:
+        </td>
+        <td>
+            <input type="number" name="year" required="required" value="2000">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Horsepower:
+        </td>
+        <td>
+            <input type="number" name="horsepower" required="required" value="50">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Quantity
+        </td>
+        <td>
+            <input type="submit" name="insert" value="Add New Car">
+        </td>
+    </tr>
+
+</table>
+
+</form>
+
+
+
+</body>
+</html>
