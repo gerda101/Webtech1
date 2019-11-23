@@ -8,10 +8,11 @@ function manufacturersToSelect() {
         var x = document.getElementById("manufacturer");
         console.log(data);
         document.getElementById("manufacturer").innerHTML = "";
-        for(i=0; i<data.length;i++) {
+        for (i = 0; i < data.length; i++) {
             var option = document.createElement("option");
             option.text = data[i];
             x.options.add(option, i);
         }
     });
+}
 }
