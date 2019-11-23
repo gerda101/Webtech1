@@ -19,39 +19,19 @@
     </div>
 </div>
 
-<form action="addManufacturers" method="post">
-    <table>
-        <tr>
-            <td>
-                Name
-            </td>
-            <td>
-                <input type ="text" name="name" required="required" >
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Country
-            </td>
-            <td>
-                <input type="text" name="nationality" required="required">
-                </input>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Founded
-            </td>
-            <td>
-                <input type ="date" name="birthDate" required="required">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="submit" name="insert" value="Add New Manufacturer">
-            </td>
-        </tr>
-    </table>
+<form action="addManufacturers" method="post" id="formcontent">
+    <label>Name:</label>
+    <input type ="text" name="name" required="required" ><br>
+    <label>Country:</label>
+    <input type="text" name="nationality" required="required"><br>
+    <label>Date:</label>
+    <input type ="date" name="birthDate" required="required"><br>
+    <input type="submit" name="insert" value="Add New Manufacturer">
 </form>
+<div id="footer">
+    <p>
+        Thank you for choosing our services!
+    </p>
+</div>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <title>Add New Car</title>
     <!--  <link href="css/index.css" rel="stylesheet" type="text/css"> -->
     <link href="css/common.css" rel="stylesheet" type="text/css">
+    <script src="js/addcar.js"></script>
 </head>
 <div id="menuBar">
     <span class="menuButton"> <a id="home" href="index.html">Home</a> </span>
@@ -19,80 +20,31 @@
     </div>
 </div>
 
-<form action="addCar" method="post">
-<table>
-    <tr>
-        <td>
-            Name:
-        </td>
-        <td>
-            <input type ="text" name="name" required="required" autofocus value="Name">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Consumption:
-        </td>
-        <td>
-            <input type="text" name="consumption" required="required" autofocus value="XX/100km">
-            </input>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Color:
-        </td>
-        <td>
-            <input type="text" name="color" required="required" autofocus value="white">
-        </td>
-    </tr>
-<tr>
-    <td>
-        Manufacturer:
-    </td>
-    <td>
-        <select name="quantity" required="required" value="0">
-        <option value="manufacturerNames()">manufacturerNames()</option>
-        </select>
-    </td>
-</tr>
-    <tr>
-        <td>
-            Available:
-        </td>
-        <td>
-            <input type="number" name="available" required="required" value="0">
-        </td>
-    <tr>
-        <td>
-            Year:
-        </td>
-        <td>
-            <input type="number" name="year" required="required" value="2000">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Horsepower:
-        </td>
-        <td>
-            <input type="number" name="horsepower" required="required" value="50">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Quantity
-        </td>
-        <td>
-            <input type="submit" name="insert" value="Add New Car">
-        </td>
-    </tr>
-
-</table>
-
+<form action="addCar" method="post" id="formcontent">
+    <label>Name:</label>
+    <input type ="text" name="name" id="name" required="required"><br>
+    <label>Consumption:</label>
+    <input type="number" name="consumption" id="consumption" required="required">
+    <label>l/100km</label><br>
+    <label>Color:</label>
+    <input type="text"  name="color" id="color" required="required"><br>
+    <label>Manufacturer:</label>
+    <select id="manufacturer" name="manufacturer" ondblclick="manufacturersToSelect()">
+        <option>Choose</option>
+    </select><br>
+    <label>Available:</label>
+    <input type="number" name="available" id="available" required="required"><br>
+    <label>Year:</label>
+    <input type="number" name="name" id="year" required="required" maxlength="4" autofocus value="1900"><br>
+    <label>Horsepower:</label>
+    <input type="number" name="horsepower" id="horsepower" required="required"><br>
+    <input type="submit" name="insert" onclick="addCar()" value="Add New Car"><br>
+    <input type="reset" name="reset" onclick="formReset()" value="Reset Form">
 </form>
-
-
-
+<div id="footer">
+    <p>
+        Thank you for choosing our services!
+    </p>
+</div>
 </body>
 </html>
