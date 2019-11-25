@@ -2,6 +2,7 @@ async function getManufacturerNames() {
     let response = await fetch('/manufacturerNames');
     let body = await response.json();
     return body;
+}
 
 function manufacturersToSelect() {
     getManufacturerNames().then(data => {
@@ -14,5 +15,4 @@ function manufacturersToSelect() {
             x.options.add(option, i);
         }
     });
-}
 }
