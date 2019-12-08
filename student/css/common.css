@@ -57,7 +57,7 @@ a:visited{
      margin: 70px;
      border-radius: 30px;
 }
-#review{
+div.review{
     font-size: 30px;
     padding: 10px;
     text-align: center;
