@@ -1,27 +1,45 @@
-/*async function getManufacturerNames() {
-    let response = await fetch('/manufacturerNames');
-    let body = await response.json();
-    return body;
-}
+$(document).ready(function () {
+    populateManSelect();
+    populateCarTable();
+});
 
-function manufacturersToSelect() {
-    getManufacturerNames().then(data => {
-        var x = document.getElementById("manufacturer");
-        console.log(data);
-        document.getElementById("manufacturer").innerHTML = "";
-        for (i = 0; i < data.length; i++) {
-            var option = document.createElement("option");
-            option.text = data[i];
-            x.options.add(option, i);
-        }
-    });
-}*/
+$(function () {
+    $('form').on("submit", function (event) {
+        event.preventDefault();
+
+        $.ajax({
+            type: 'post',
+            url : 'addCar',
+            data : $('form').serialize(),
+            success : function (receivedData) {
+                populateCarTable();
+            },
+            error : function () {
+                alert("A car with that name already exists!");
+            }
+        })
+    })
+});
 
 function populateManSelect() {
     $.getJSON('manufacturerNames', function (data) {
         var select = $('#manSelect');
         $.each(data, function (key, value) {
             $(select).append('<option value='+value+'>'+value+'</option>');
+        })
+    })
+}
+
+function populateCarTable() {
+    $.getJSON('cars', function (data) {
+        var table = $('#carTable');
+        $.each(data, function (key, value) {
+            var row = $('<tr></tr>');
+            $.each(value, function (k, v) {
+                var cell = $('<td>'+ v +'</td>');
+                $(row).append(cell);
+            });
+            $(table).append(row);
         })
     })
 }
