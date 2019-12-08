@@ -1,0 +1,114 @@
+body{
+    font-family: "Adobe Devanagari";
+    background-image: url("imgs/road.png"), url("imgs/sky.jpg");
+    background-size: 100% 100%;
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+a:link {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+a:visited{
+    color: navajowhite;
+    text-decoration: none;
+}
+#banner {
+    height: 160px;
+    background-color: #89a6aa;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    color: #302c23;
+    font-size: 120px;
+}
+#footer{
+    height: 80px;
+    background-color: #89a6aa;
+    text-align: center;
+    color: #302c23;
+    font-size: 40px;
+    alignment: bottom;
+}
+#menuBar {
+    font-size: 17px;
+    background-color: #89a6aa;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    position: sticky;
+}
+#menuBar .menuButton {
+    background-color: #1f323c;
+    width: 180px;
+    border: 3px solid #1f323c;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+}
+#content{
+     font-size: 30px;
+     padding: 35px;
+     text-align: justify;
+     background: #f8f8f8;
+     margin: 70px;
+     border-radius: 30px;
+}
+#formcontent{
+    font-size: 30px;
+    padding: 30px;
+    padding-left: 20%;
+    background: #f8f8f8;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 30px;
+}
+#error{
+    border: 3px darkred;
+    color: darkred;
+}
+#menuBar .menuButton:hover {
+    background: #1f323c;
+    border: 3px;
+    text-decoration: underline;
+}
+
+img.imgleft {
+    height: 300px;
+    float: left;
+    padding: 20px;
+}
+img.imgright {
+    height: 300px;
+    float: right;
+    padding: 20px;
+}
+img.profile {
+    height: 410px;
+    float: left;
+    padding: 20px;
+}
+
+div.clearfix {
+    padding: 20px;
+    overflow: auto;
+}
+div.gallery{
+    height: 250px;
+    width: 310px;
+    padding: 10px;
+    margin: 50px ;
+    text-align: center;
+    float: left;
+    color: #f8f8f8;
+}
+div.gallery:hover {
+    border: 1px solid #f8f8f8;
+}
+div.gallery img {
+    width: 90%;
+}
